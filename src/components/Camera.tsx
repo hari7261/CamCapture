@@ -3,7 +3,6 @@
 import React, { useState, useRef, useCallback } from 'react'
 import Webcam from 'react-webcam'
 import { CameraIcon, RefreshCw } from 'lucide-react'
-import { Button } from '@/components/ui/button'
 import FileSaver from 'file-saver'
 
 interface CameraProps {
@@ -48,18 +47,23 @@ const Camera: React.FC<CameraProps> = ({ filter }) => {
         style={{ filter }}
       />
       <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-4">
-        <Button onClick={capture} className="bg-blue-500 hover:bg-blue-600">
+        <button
+          onClick={capture}
+          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded flex items-center"
+        >
           <CameraIcon className="w-5 h-5 mr-2" />
           Capture
-        </Button>
-        <Button onClick={toggleCamera} className="bg-green-500 hover:bg-green-600">
+        </button>
+        <button
+          onClick={toggleCamera}
+          className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded flex items-center"
+        >
           <RefreshCw className="w-5 h-5 mr-2" />
           Switch Camera
-        </Button>
+        </button>
       </div>
     </div>
   )
 }
 
 export default Camera
-
