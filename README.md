@@ -107,7 +107,7 @@ That’s it! You’re ready to snap, filter, and save.
 
 ---
 
-## 🖤 **Made with Love**
+## 🖤 **Made with Love By Hariom**
 This app was crafted with a mix of caffeine ☕, code 💻, and an obsession with making photos cooler.  
 
 If you like it, give it a ⭐ on GitHub. If you don’t...well, try a different filter and let’s talk! 😄  
